@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afro Lounge - Premium Healthy Food & Supplements</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo/logo_2.png" alt="Afro Lounge Logo" class="navbar-logo" />
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Shop <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/restaurant.html">Restaurant</a></li>
+                            <li><a href="pages/cosmetics.html">Cosmetics</a></li>
+                            <li><a href="pages/bar.html">Bar</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+                    <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                    <a href="pages/login.html" class="user-icon"><i class="fas fa-user"></i></a>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('assets/images/hero/hero_5.jpeg')">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h2>Welcome to</h2>
+                        <h1>Destiny Afro Continentals</h1>
+                        <p>Shop your favorite dishes, cosmetics, and drinks; all in one place,<br>
+                        24/7 available.</p>
+                        <div class="hero-buttons">
+                            <a href="#categories_section"><button class="btn btn-primary">Shop Now</button></a>
+                            <a href="pages/about.html"><button class="btn btn-secondary">Learn More</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-slide" style="background-image: url('assets/images/hero/hero_2.jpeg')">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h2>Welcome to</h2>
+                        <h1>Destiny Afro Continentals</h1>
+                        <p>Shop your favorite dishes, cosmetics, and drinks; all in one place,<br>
+                        24/7 available.</p>
+                        
+                        <div class="hero-buttons">
+                            <a href="#categories_section"><button class="btn btn-primary">Shop Now</button></a>
+                            <a href="pages/about.html"><button class="btn btn-secondary">Learn More</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('assets/images/hero/hero_3.jpeg')">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h2>Welcome to</h2>
+                        <h1>Destiny Afro Continentals</h1>
+                        <p>Shop your favorite dishes, cosmetics, and drinks; all in one place,<br>
+                        24/7 available.</p>
+                        
+                        <div class="hero-buttons">
+                            <a href="#categories_section"><button class="btn btn-primary">Shop Now</button></a>
+                            <a href="pages/about.html"><button class="btn btn-secondary">Learn More</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Hero Slider Dots -->
+        <div class="hero-slider-dots">
+            <span class="hero-dot active" data-slide="0"></span>
+            <span class="hero-dot" data-slide="1"></span>
+            <span class="hero-dot" data-slide="2"></span>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Free Shipping</h3>
+                    <p>On orders over €50</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Quality Guaranteed</h3>
+                    <p>Premium ingredients only</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-undo"></i>
+                    <h3>Easy Returns</h3>
+                    <p>30-day return policy</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Always here to help</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories_section">
+        <div class="container">
+            <h2>Shop by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="assets/images/category/category_1.1.jpg" alt="Restaurant">
+                    <div class="category-content">
+                        <h3>Restaurant</h3>
+                        <p>Fine dining and casual eateries</p>
+                        <a href="pages/restaurant.html" class="category-link">Shop Now</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="assets/images/category/category_2.jpeg" alt="Cosmetics">
+                    <div class="category-content">
+                        <h3>Cosmetics</h3>
+                        <p>Beauty and skincare products</p>
+                        <a href="pages/cosmetics.html" class="category-link">Shop Now</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="assets/images/category/category_3.jpeg" alt="Bar">
+                    <div class="category-content">
+                        <h3>Bar</h3>
+                        <p>Craft cocktails and premium spirits</p>
+                        <a href="pages/bar.html" class="category-link">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products" id="products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="products-slider-container">
+                <button class="slider-arrow slider-prev" aria-label="Previous products">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="products-slider">
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/featured/featured_1.jpg">
+                                <div class="product-overlay">
+                                    <button class="quick-view">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Jollof Rice & Chicken</h3>
+                                <p class="product-description">Classic West African jollof rice served with tender chicken and vegetables.</p>
+                                <div class="product-price">
+                                    <div class="price-info">
+                                        <span class="current-price">€15</span>
+                                    </div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/featured/featured_2.jpg">
+                                <div class="product-overlay">
+                                    <button class="quick-view">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Spaghetti & Fried Egg</h3>
+                                <p class="product-description">Delicious spaghetti pasta topped with a perfectly fried egg and savory sauce.</p>
+                                <div class="product-price">
+                                    <div class="price-info">
+                                        <span class="current-price">€29.99</span>
+                                    </div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/featured/featured_3.jpg">
+                                <div class="product-overlay">
+                                    <button class="quick-view">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Goat Head Pepper Soup (Nkwobi/Isi Ewu)</h3>
+                                <p class="product-description">Traditional spicy goat head soup, a delicacy known as Nkwobi or Isi Ewu.</p>
+                                <div class="product-price">
+                                    <div class="price-info">
+                                        <span class="current-price">€24.99</span>
+                                        <span class="original-price">€29.99</span>
+                                    </div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/featured/feature_4.jpeg">
+                                <div class="product-overlay">
+                                    <button class="quick-view">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Hennessy Drink</h3>
+                                <p class="product-description">Premium Hennessy cognac, perfect for celebrations and special occasions.</p>
+                                <div class="product-price">
+                                    <div class="price-info">
+                                        <span class="current-price">€34.99</span>
+                                    </div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/featured/feature_5.png" alt="Omega-3">
+                                <div class="product-overlay">
+                                    <button class="quick-view">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Beer Bottle Drink</h3>
+                                <p class="product-description">Chilled beer bottle, ideal for relaxing and social gatherings.</p>
+                                <div class="product-price">
+                                    <div class="price-info">
+                                        <span class="current-price">€39.99</span>
+                                        <span class="original-price">€49.99</span>
+                                    </div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/featured/feature_6.jpg" alt="Vitamin D">
+                                <div class="product-overlay">
+                                    <button class="quick-view">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Edat White Soap</h3>
+                                <p class="product-description">Natural Edat white soap for gentle and effective skin cleansing.</p>
+                                <div class="product-price">
+                                    <div class="price-info">
+                                        <span class="current-price">€19.99</span>
+                                    </div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Additional products for slider -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/featured/feature_7.jpg" alt="Creatine">
+                                <div class="product-overlay">
+                                    <button class="quick-view">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Sika Gold Soap</h3>
+                                <p class="product-description">Luxurious Sika Gold soap for radiant and healthy-looking skin.</p>
+                                <div class="product-price">
+                                    <div class="price-info">
+                                        <span class="current-price">€24.99</span>
+                                        <span class="original-price">€29.99</span>
+                                    </div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/featured/feature_8.png">
+                                <div class="product-overlay">
+                                    <button class="quick-view">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Fried Rice & Fish</h3>
+                                <p class="product-description">Flavorful fried rice served with crispy, well-seasoned fish fillet.</p>
+                                <div class="product-price">
+                                    <div class="price-info">
+                                        <span class="current-price">€44.99</span>
+                                    </div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-arrow slider-next" aria-label="Next products">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="slider-dots">
+                <!-- Dots will be dynamically generated based on actual slides -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for exclusive offers and health tips</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="assets/images/logo/logo_2.png" alt="Afro Lounge Logo" class="footer-logo" />
+                    <p>Premium quality supplements and healthy foods to support your active lifestyle.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/restaurant.html">Shop</a></li>
+                        <li><a href="pages/about.html">About Us</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +32 (0) 465673196</p>
+                    <p><i class="fas fa-envelope"></i> destinyafroloung@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Boulevard du Midi 94/95, 1000 Bruxelles</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Afro Lounge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Shopping Cart</h3>
+                <button class="close-cart">&times;</button>
+            </div>
+            <div class="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-total">
+                <h4>Total: €<span id="cartTotal">0.00</span></h4>
+                <a href="pages/checkout.html" class="btn btn-primary checkout-btn">Checkout</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/js/main/script.js"></script>
+</body>
+</html> 

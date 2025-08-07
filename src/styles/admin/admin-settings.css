@@ -1,0 +1,741 @@
+/* Admin Settings Page Specific Styles */
+
+/* Settings Navigation */
+.settings-nav {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+    overflow-x: auto;
+    padding-bottom: 0;
+}
+
+.settings-tab {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.settings-tab:hover {
+    color: #333;
+    background: #f8f9fa;
+}
+
+.settings-tab.active {
+    color: #007bff;
+    border-bottom-color: #007bff;
+    background: #f8f9fa;
+}
+
+.settings-tab i {
+    font-size: 1rem;
+}
+
+/* Settings Panels */
+.settings-panels {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.settings-panel {
+    display: none;
+    padding: 30px;
+}
+
+.settings-panel.active {
+    display: block;
+}
+
+.panel-header {
+    margin-bottom: 30px;
+}
+
+.panel-header h2 {
+    margin: 0 0 8px 0;
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.panel-header p {
+    margin: 0;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Settings Form */
+.settings-form {
+    max-width: 800px;
+}
+
+.form-section {
+    margin-bottom: 40px;
+}
+
+.form-section h3 {
+    margin: 0 0 20px 0;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    color: #333;
+    background: white;
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Checkbox Styles */
+.checkbox-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: #333;
+    position: relative;
+    line-height: 1.2;
+    vertical-align: middle;
+}
+
+.checkbox-label .checkmark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    vertical-align: middle;
+    position: relative;
+    top: 1px; /* slight offset for optical alignment */
+}
+
+.checkmark {
+    width: 22px;
+    height: 22px;
+    border: 2px solid #bdbdbd;
+    border-radius: 5px;
+    background: #fff;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+}
+
+.checkbox-label input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkmark {
+    background: #007bff;
+    border-color: #007bff;
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkmark::after {
+    content: '\f00c';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+/* Toggle Switch */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.3s;
+    border-radius: 24px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #007bff;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Logo Upload */
+.logo-upload {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-preview {
+    width: 150px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+}
+
+.logo-preview img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.upload-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Payment Methods */
+.payment-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.payment-method {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: #f8f9fa;
+}
+
+.method-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.method-info i {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.method-info h4 {
+    margin: 0 0 4px 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.method-info p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* Shipping Methods */
+.shipping-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.shipping-method {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: #f8f9fa;
+}
+
+.method-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.method-price {
+    font-weight: 600;
+    color: #333;
+    font-size: 1rem;
+}
+
+/* Shipping Zones */
+.shipping-zones {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.zone-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background: #f8f9fa;
+}
+
+.zone-info h4 {
+    margin: 0 0 4px 0;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.zone-info p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* Notification Groups */
+.notification-group {
+    margin-bottom: 24px;
+}
+
+.notification-group h4 {
+    margin: 0 0 12px 0;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Two-Factor Setup */
+.two-factor-setup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: #f8f9fa;
+}
+
+.setup-status {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.setup-status i {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.setup-status h4 {
+    margin: 0 0 4px 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.setup-status p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* Active Sessions */
+.active-sessions {
+    margin-bottom: 20px;
+}
+
+.active-sessions h4 {
+    margin: 0 0 16px 0;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.session-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.session-item:last-child {
+    border-bottom: none;
+}
+
+.session-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.session-info i {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.session-info h5 {
+    margin: 0 0 4px 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.session-info p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.session-status {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.session-status.current {
+    background: #e8f5e8;
+    color: #388e3c;
+}
+
+/* Login History */
+.login-history {
+    margin-bottom: 20px;
+}
+
+.history-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.history-item:last-child {
+    border-bottom: none;
+}
+
+.history-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.history-info i {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.history-info h5 {
+    margin: 0 0 4px 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.history-info p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.history-time {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+/* Password Requirements */
+.password-requirements {
+    margin-top: 16px;
+    padding: 16px;
+    background: #f8f9fa;
+    border-radius: 6px;
+}
+
+.password-requirements h4 {
+    margin: 0 0 12px 0;
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.password-requirements ul {
+    margin: 0;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.password-requirements li {
+    margin-bottom: 6px;
+    font-size: 0.85rem;
+    color: #666;
+    position: relative;
+}
+
+.password-requirements li::before {
+    content: '\f00d';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    left: -20px;
+    color: #dc3545;
+}
+
+.password-requirements li.met::before {
+    content: '\f00c';
+    color: #28a745;
+}
+
+/* Form Actions */
+.form-actions {
+    display: flex;
+    gap: 12px;
+    padding-top: 20px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+.btn-secondary {
+    padding: 10px 20px;
+    background: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-secondary:hover {
+    background: #545b62;
+}
+
+.btn-outline {
+    padding: 10px 20px;
+    background: white;
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-outline:hover {
+    background: #007bff;
+    color: white;
+}
+
+.btn-text {
+    padding: 6px 12px;
+    background: none;
+    color: #dc3545;
+    border: none;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.btn-text:hover {
+    color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .settings-nav {
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+    
+    .settings-tab {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+    
+    .settings-panel {
+        padding: 20px;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .logo-upload {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    
+    .payment-method,
+    .shipping-method {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    
+    .method-actions {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .two-factor-setup {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    
+    .session-item,
+    .history-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+    }
+    
+    .btn-primary,
+    .btn-secondary,
+    .btn-outline {
+        width: 100%;
+    }
+    
+    .checkmark {
+        width: 20px;
+        height: 20px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .settings-panel {
+        padding: 16px;
+    }
+    
+    .panel-header h2 {
+        font-size: 1.3rem;
+    }
+    
+    .form-section h3 {
+        font-size: 1rem;
+    }
+    
+    .payment-method,
+    .shipping-method {
+        padding: 12px;
+    }
+    
+    .method-info {
+        gap: 8px;
+    }
+    
+    .method-info i {
+        font-size: 1.2rem;
+    }
+    
+    .method-info h4 {
+        font-size: 0.9rem;
+    }
+    
+    .method-info p {
+        font-size: 0.8rem;
+    }
+    
+    .checkmark {
+        width: 18px;
+        height: 18px;
+        font-size: 0.85rem;
+    }
+}

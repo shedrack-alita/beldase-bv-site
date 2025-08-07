@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant - Afro Lounge</title>
+    <link rel="stylesheet" href="../src/styles/main.css">
+    <link rel="shortcut icon" href="../assets/images/logo/favicon.png" type="image/png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="../index.html">
+                        <img src="../assets/images/logo/logo_2.png" alt="Afro Lounge Logo" class="navbar-logo" />
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Shop <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./restaurant.html">Restaurant</a></li>
+                            <li><a href="./cosmetics.html">Cosmetics</a></li>
+                            <li><a href="./bar.html">Bar</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+                    <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                    <a href="#" class="user-icon"><i class="fas fa-user"></i></a>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Category Hero Section -->
+    <section class="category-hero restaurant-hero">
+        <div class="container">
+            <div class="category-hero-content">
+                <h1>Restaurant</h1>
+                <p>Discover the finest dining experiences and culinary delights. From gourmet meals to casual dining, we bring you the best restaurants and food services.</p>
+                <nav class="breadcrumb">
+                    <a href="../index.html">Home</a> / <span>Restaurant</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurant Products -->
+    <section class="category-products" id="products">
+        <div class="container">
+            <div class="category-filters">
+                <h3>Filter by:</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="breakfast">Breakfast</button>
+                    <button class="filter-btn" data-filter="lunch">Lunch</button>
+                    <button class="filter-btn" data-filter="dinner">Dinner</button>
+                </div>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Breakfast -->
+                <div class="product-card" data-category="breakfast">
+                    <div class="product-image">
+                        <img src="../assets/images/restaurant/moimoi.jpeg" alt="Moi Moi & Pap">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Moi Moi & Pap</h3>
+                        <p class="product-description">Steamed bean pudding (Moi Moi) served with smooth, warm pap for a nourishing start.</p>
+                        <div class="product-price">
+                            <div class="price-info">
+                                <span class="current-price">€7.99</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="breakfast">
+                    <div class="product-image">
+                        <img src="../assets/images/restaurant/yam_porridge.jpg" alt="Yam Porridge">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Yam Porridge</h3>
+                        <p class="product-description">Soft yam cubes cooked in a rich tomato and vegetable sauce, perfect for breakfast.</p>
+                        <div class="product-price">
+                            <div class="price-info">
+                                <span class="current-price">€8.99</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="breakfast">
+                    <div class="product-image">
+                        <img src="../assets/images/restaurant/white_yam.jpg" alt="White Yam & Sauce">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>White Yam & Sauce</h3>
+                        <p class="product-description">Boiled white yam slices served with spicy tomato sauce and vegetables.</p>
+                        <div class="product-price">
+                            <div class="price-info">
+                                <span class="current-price">€8.49</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Lunch -->
+                <div class="product-card" data-category="lunch">
+                    <div class="product-image">
+                        <img src="../assets/images/restaurant/jollof_rice_1.jpg" alt="Jollof Rice & Chicken">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Jollof Rice & Chicken</h3>
+                        <p class="product-description">Classic West African jollof rice with spicy grilled chicken and fresh salad.</p>
+                        <div class="product-price">
+                            <div class="price-info">
+                                <span class="current-price">€15</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="lunch">
+                    <div class="product-image">
+                        <img src="../assets/images/restaurant/fried_rice.jpg" alt="Fried Rice & Chicken">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Fried Rice & Chicken</h3>
+                        <p class="product-description">Nigerian-style fried rice served with grilled or fried chicken and vegetables.</p>
+                        <div class="product-price">
+                            <div class="price-info">
+                                <span class="current-price">€12.99</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="lunch">
+                    <div class="product-image">
+                        <img src="../assets/images/restaurant/abacha.jpeg" alt="Abacha (African Salad)">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Abacha (African Salad)</h3>
+                        <p class="product-description">Cassava flakes mixed with palm oil, ugba, fish, and fresh vegetables.</p>
+                        <div class="product-price">
+                            <div class="price-info">
+                                <span class="current-price">€10.99</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="lunch">
+                    <div class="product-image">
+                        <img src="../assets/images/restaurant/spagetti.jpg" alt="Spaghetti">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Spaghetti</h3>
+                        <p class="product-description">Nigerian-style stir-fried spaghetti with vegetables and choice of protein.</p>
+                        <div class="product-price">
+                            <div class="price-info">
+                                <span class="current-price">€9.99</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dinner -->
+                <div class="product-card" data-category="dinner">
+                    <div class="product-image">
+                        <img src="../assets/images/restaurant/swallow_egusi.jpg" alt="Swallow (Semo) & Egusi Soup">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Swallow & Egusi Soup</h3>
+                        <p class="product-description">Soft semovita served with rich, hearty egusi (melon seed) soup and assorted meats.</p>
+                        <div class="product-price">
+                            <div class="price-info">
+                                <span class="current-price">€14.99</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="dinner">
+                    <div class="product-image">
+                        <img src="../assets/images/restaurant/akpu_oha.jpeg" alt="Akpu & Oha Soup">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Akpu & Oha Soup</h3>
+                        <p class="product-description">Traditional cassava fufu (Akpu) served with delicious Oha soup and assorted meats.</p>
+                        <div class="product-price">
+                            <div class="price-info">
+                                <span class="current-price">€15.99</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="dinner">
+                    <div class="product-image">
+                        <img src="../assets/images/restaurant/isi_ewu.jpg" alt="Goat Head Pepper Soup">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Goat Head Pepper Soup (Nkwobi/Isi Ewu)</h3>
+                        <p class="product-description">Spicy and flavorful goat head pepper soup, a traditional Nigerian delicacy.</p>
+                        <div class="product-price">
+                            <div class="price-info">
+                                <span class="current-price">€13.99</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="dinner">
+                    <div class="product-image">
+                        <img src="../assets/images/restaurant/porridge_beens.jpeg" alt="Porridge Beans & Fish">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Porridge Beans & Fish</h3>
+                        <p class="product-description">Nigerian-style porridge beans cooked with spices, served with fried fish for a hearty dinner.</p>
+                        <div class="product-price">
+                            <div class="price-info">
+                                <span class="current-price">€11.99</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Food Menu Section -->
+    <section class="custom-food-menu" id="custom-food-menu">
+        <div class="container">
+            <h2>Build Your Own Meal</h2>
+            <p class="menu-description">Select your preferred base, protein, vegetables, and extras to create your perfect meal. All options are freshly prepared and customizable to your taste!</p>
+            <form class="food-menu-form" id="foodMenuForm">
+                <div class="menu-categories">
+                    <div class="menu-category">
+                        <h3 data-step="1"><i class="fas fa-utensils"></i> Choose Your Base</h3>
+                        <div class="menu-options">
+                            <label><input type="radio" name="base" value="Jollof Rice" required id="base-jollof"> Jollof Rice</label>
+                            <label><input type="radio" name="base" value="Fried Rice" id="base-fried"> Fried Rice</label>
+                            <label><input type="radio" name="base" value="Spaghetti" id="base-spaghetti"> Spaghetti</label>
+                            <label><input type="radio" name="base" value="White Rice" id="base-white"> White Rice</label>
+                        </div>
+                    </div>
+                    <div class="menu-category">
+                        <h3 data-step="2"><i class="fas fa-drumstick-bite"></i> Choose Your Protein</h3>
+                        <div class="menu-options">
+                            <label><input type="checkbox" name="protein" value="Chicken" id="protein-chicken"> Chicken</label>
+                            <label><input type="checkbox" name="protein" value="Fish" id="protein-fish"> Fish</label>
+                            <label><input type="checkbox" name="protein" value="Goat Meat" id="protein-goat"> Goat Meat</label>
+                            <label><input type="checkbox" name="protein" value="Egg" id="protein-egg"> Egg</label>
+                        </div>
+                    </div>
+                    <div class="menu-category">
+                        <h3 data-step="3"><i class="fas fa-leaf"></i> Add Vegetables</h3>
+                        <div class="menu-options">
+                            <label><input type="checkbox" name="vegetables" value="Steamed Veggies" id="veg-steamed"> Steamed Veggies</label>
+                            <label><input type="checkbox" name="vegetables" value="Coleslaw" id="veg-coleslaw"> Coleslaw</label>
+                            <label><input type="checkbox" name="vegetables" value="Salad" id="veg-salad"> Salad</label>
+                        </div>
+                    </div>
+                    <div class="menu-category">
+                        <h3 data-step="4"><i class="fas fa-plus-circle"></i> Extras</h3>
+                        <div class="menu-options">
+                            <label><input type="checkbox" name="extras" value="Plantain" id="extra-plantain"> Plantain</label>
+                            <label><input type="checkbox" name="extras" value="Moi Moi" id="extra-moinmoi"> Moi Moi</label>
+                            <label><input type="checkbox" name="extras" value="Pepper Sauce" id="extra-pepper"> Pepper Sauce</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-summary">
+                    <h4>Your Selection:</h4>
+                    <ul id="selection-summary">
+                        <li>Base: <span>-</span></li>
+                        <li>Protein: <span>-</span></li>
+                        <li>Vegetables: <span>-</span></li>
+                        <li>Extras: <span>-</span></li>
+                    </ul>
+                    <button type="submit" class="btn btn-primary">Add to Order</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for exclusive restaurant offers and dining tips</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="../assets/images/logo/logo_2.png" alt="Afro Lounge Logo" class="footer-logo" />
+                    <p>Premium quality dining experiences and culinary services.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Reservations</a></li>
+                        <li><a href="#">Cancellations</a></li>
+                        <li><a href="#">Special Requests</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +32 (0) 465673196</p>
+                    <p><i class="fas fa-envelope"></i> destinyafroloung@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Boulevard du Midi 94/95, 1000 Bruxelles</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Afro Lounge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Shopping Cart</h3>
+                <button class="close-cart">&times;</button>
+            </div>
+            <div class="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-total">
+                <h4>Total: €<span id="cartTotal">0.00</span></h4>
+                <a href="checkout.html" class="btn btn-primary checkout-btn">Checkout</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../src/js/main/script.js"></script>
+    <script src="../src/js/main/category.js"></script>
+</body>
+</html> 

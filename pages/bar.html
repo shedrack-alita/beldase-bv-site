@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar - Afro Lounge</title>
+    <link rel="stylesheet" href="../src/styles/main.css">
+    <link rel="shortcut icon" href="../assets/images/logo/favicon.png" type="image/png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="../index.html">
+                        <img src="../assets/images/logo/logo_2.png" alt="Afro Lounge Logo" class="navbar-logo" />
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Shop <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="restaurant.html">Restaurant</a></li>
+                            <li><a href="cosmetics.html">Cosmetics</a></li>
+                            <li><a href="bar.html">Bar</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+                    <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                    <a href="#" class="user-icon"><i class="fas fa-user"></i></a>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Category Hero Section -->
+    <section class="category-hero bar-hero">
+        <div class="container">
+            <div class="category-hero-content">
+                <h1>Bar</h1>
+                <p>Experience the finest craft cocktails and premium spirits. From classic drinks to innovative creations, we bring you the best in mixology and spirits.</p>
+                <nav class="breadcrumb">
+                    <a href="../index.html">Home</a> / <span>Bar</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bar Products -->
+    <section class="category-products" id="products">
+        <div class="container">
+            <div class="category-filters">
+                <h3>Filter by:</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="beer">Beer</button>
+                    <button class="filter-btn" data-filter="wine">Wine</button>
+                    <button class="filter-btn" data-filter="spirit">Spirit</button>
+                </div>
+                <!-- Drink Dropdown -->
+                <div class="drink-select-container" style="margin-top: 1rem;">
+                    <label for="drink-dropdown" style="font-weight: 500;">Or select from the full drink list:</label>
+                    <div id="drink-dropdown" class="custom-dropdown" tabindex="0">
+                        <button class="dropdown-toggle" type="button">Select a drink...</button>
+                        <div class="dropdown-list" style="display: none;"></div>
+                    </div>
+                    <div id="drink-select-message" style="margin-top:0.5rem;"></div>
+                </div>
+            </div>
+            
+            <div class="products-grid">
+                <!-- BEER -->
+                <div class="product-card" data-category="beer">
+                    <div class="product-image">
+                        <img src="../assets/images/bar/heineken.jpg " alt="Heineken 0.4L">  
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Heineken 0.4L</h3>
+                        <p class="product-description">Classic Dutch lager, crisp and refreshing, perfect for any occasion.</p>
+                        <div class="product-price">
+                            <div class="price-info">
+                                <span class="current-price">€5</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="beer">
+                    <div class="product-image">
+                        <img src="../assets/images/bar/guinness.jpg" alt="Guinness 33cl">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Guinness 33cl</h3>
+                        <p class="product-description">Rich and creamy Irish stout with notes of coffee and chocolate.</p>
+                        <div class="product-price">
+                            <div class="price-info">
+                                <span class="current-price">€5</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="beer">
+                    <div class="product-image">
+                        <img src="../assets/images/bar/corona.jpg" alt="Corona">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Corona</h3>
+                        <p class="product-description">Light Mexican lager, best enjoyed chilled with a wedge of lime.</p>
+                        <div class="product-price">
+                            <div class="price-info">
+                                <span class="current-price">€5.50</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="beer">
+                    <div class="product-image">
+                        <img src="../assets/images/bar/leffe.jpg" alt="Leffe Blonde 33cl">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Leffe Blonde 33cl</h3>
+                        <p class="product-description">Belgian abbey beer, smooth and fruity with a subtle bitterness.</p>
+                        <div class="product-price">
+                            <div class="price-info">
+                                <span class="current-price">€5</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- WINE -->
+                <div class="product-card" data-category="wine">
+                    <div class="product-image">
+                        <img src="../assets/images/bar/red_wine.jpg" alt="Red Wine">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Red Wine</h3>
+                        <p class="product-description">Full-bodied red wine with rich berry flavors and a smooth finish.</p>
+                        <div class="product-price">
+                            <div class="price-info">
+                                <span class="current-price">€30</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="wine">
+                    <div class="product-image">
+                        <img src="../assets/images/bar/rose_wine.jpg" alt="Rosé Wine">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Rosé Wine</h3>
+                        <p class="product-description">Delicate and refreshing rosé, perfect for summer evenings.</p>
+                        <div class="product-price">
+                            <div class="price-info">
+                                <span class="current-price">€30</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="wine">
+                    <div class="product-image">
+                        <img src="../assets/images/bar/prosecco.jpg" alt="Prosecco">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Prosecco</h3>
+                        <p class="product-description">Sparkling Italian wine, light and bubbly with fruity notes.</p>
+                        <div class="product-price">
+                            <div class="price-info">
+                                <span class="current-price">€30</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="wine">
+                    <div class="product-image">
+                        <img src="../assets/images/bar/chenet.jpg" alt="JP Chenet">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>JP Chenet</h3>
+                        <p class="product-description">Popular French wine, smooth and easy to drink, ideal for any meal.</p>
+                        <div class="product-price">
+                            <div class="price-info">
+                                <span class="current-price">€25</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- SPIRIT -->
+                <div class="product-card" data-category="spirit">
+                    <div class="product-image">
+                        <img src="../assets/images/bar/hennessy.jpg" alt="Hennessy">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Hennessy</h3>
+                        <p class="product-description">World-renowned cognac, rich and complex with a smooth finish.</p>
+                        <div class="product-price">
+                            <div class="price-info">
+                                <span class="current-price">€100</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="spirit">
+                    <div class="product-image">
+                        <img src="../assets/images/bar/jackdaniels.jpg" alt="Jack Daniel">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Jack Daniel</h3>
+                        <p class="product-description">Classic Tennessee whiskey, mellowed for smoothness and character.</p>
+                        <div class="product-price">
+                            <div class="price-info">
+                                <span class="current-price">€80</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="spirit">
+                    <div class="product-image">
+                        <img src="../assets/images/bar/baileys.jpg" alt="Baileys Original">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Baileys Original</h3>
+                        <p class="product-description">Creamy Irish liqueur, a blend of whiskey and fresh dairy cream.</p>
+                        <div class="product-price">
+                            <div class="price-info">
+                                <span class="current-price">€60</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="spirit">
+                    <div class="product-image">
+                        <img src="../assets/images/bar/campari.jpg" alt="Campari">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Campari</h3>
+                        <p class="product-description">Iconic Italian aperitif, bittersweet with herbal and fruity notes.</p>
+                        <div class="product-price">
+                            <div class="price-info">
+                                <span class="current-price">€70</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for exclusive bar offers and cocktail recipes</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="../assets/images/logo/logo_2.png" alt="Afro Lounge Logo" class="footer-logo" />
+                    <p>Premium spirits and craft cocktails for the ultimate drinking experience.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Age Verification</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Cocktail Recipes</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +32 (0) 465673196</p>
+                    <p><i class="fas fa-envelope"></i> destinyafroloung@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Boulevard du Midi 94/95, 1000 Bruxelles</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Afro Lounge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Shopping Cart</h3>
+                <button class="close-cart">&times;</button>
+            </div>
+            <div class="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-total">
+                <h4>Total: €<span id="cartTotal">0.00</span></h4>
+                <a href="checkout.html" class="btn btn-primary checkout-btn">Checkout</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../src/js/main/bar-drinks.js"></script>
+    <script src="../src/js/main/category.js"></script>
+    <script src="../src/js/main/script.js"></script>
+
+</body>
+</html> 
